@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f56e3c695def8f74e8f17c1a106c8b57
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Gobold Uplow
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 01b60bb36569a99449f86d36ed221e08, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
