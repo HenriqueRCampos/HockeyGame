@@ -10,12 +10,12 @@ public class Bot : MonoBehaviour
     // [SerializeField] private float newBotVelocity;
     [Range(8f, 11.5f)]
     public float newBotForce;
-    [Range(0.07f, 0.13f)]
+    [Range(0.02f, 0.05f)]
     public float newBotVelocity;
     void Start()
     {
         newBotForce = Random.Range(8f, 11.5f);
-        newBotVelocity = Random.Range(0.07f, 0.13f);
+        newBotVelocity = Random.Range(0.04f, 0.07f);
         _botRB = GetComponent<Rigidbody2D>();
     }
 
@@ -55,7 +55,7 @@ public class Bot : MonoBehaviour
         if (collision.gameObject.CompareTag("Ball"))
         {
             newBotForce = Random.Range(8f, 11.5f);
-            newBotVelocity = Random.Range(0.07f, 0.13f);
+            newBotVelocity = Random.Range(0.04f, 0.07f);
             Vector2 awayPlayer = _ball.transform.position - transform.position;
             _ball.GetComponent<Rigidbody2D>().velocity = awayPlayer * newBotForce;
         }

@@ -6,30 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tela Captura Lead/Localizacao.unity
-    guid: 9855fda041eab6846bbbe3e0c0104222
-  - enabled: 1
-    path: Assets/Cena - EscolhaJogo/Escolha Tela.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Tela Captura Lead/Captura Lead.unity
-    guid: ed9e5306e14f7cc49bd4ed5bb0ef2ae6
-  - enabled: 1
-    path: "Assets/Assets - Quebra-Cabe\xE7a/Assets - NEW/Cenas/Quebra-Cabeca.unity"
-    guid: 9a7625ff2734d9144aabb574aa43c040
-  - enabled: 1
-    path: Assets/Assets -  Line-Game/Scenes/Initial Screen.unity
-    guid: 844209b979aabf84ea4a259a986fb790
-  - enabled: 1
-    path: Assets/Assets -  Line-Game/Scenes/LineGame.unity
-    guid: 0bca0bb89c97fe14a848786fffda3dc4
-  - enabled: 1
-    path: Assets/Assets - HockeyGame/Scenes/Menu.unity
+    path: Assets/Scenes/Menu.unity
     guid: eb2eda0e6cbf04044817ff4a1f77d91e
   - enabled: 1
-    path: Assets/Assets - HockeyGame/Scenes/Game.unity
+    path: Assets/Scenes/Game.unity
     guid: 4900545524d643045aea09324712e73f
-  - enabled: 1
-    path: Assets/Cena Final/CenaFinal.unity
-    guid: 733ce7618498bb94b9ad3ca000fa9947
   m_configObjects: {}

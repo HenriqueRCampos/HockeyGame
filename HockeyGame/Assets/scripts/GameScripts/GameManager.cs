@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     public GameObject goaldown;
     public Text lScore;
     public Text RScore;
-    public Text timerUI;
     public List<GameObject> ScoreUP;
     public List<GameObject> ScoreDown;
     public List<ParticleSystem> golparticles;
@@ -28,27 +27,14 @@ public class GameManager : MonoBehaviour
     public GameObject draw;
     public List<GameObject> PauseUI;
     public GameObject pauseButton;
-    public static float gameTimer = 0; // tornal alteravel pelo menu principal
-    public static float AuxTimer;
     int _scoreCounter;
     int _scoreCounter_two;
     int _one = 1;
     int _one_two = 1;
     bool gameover = false;
     public static bool gamePause;
-    private bool countDownReady;
     void Start()
     {
-        gameTimer = AuxTimer;
-
-        if (AuxTimer == 0)
-        {
-            gameTimer = 90;
-        }
-        float minutes = Mathf.FloorToInt(gameTimer / 60);
-        float seconds = Mathf.FloorToInt(gameTimer % 60);
-
-        timerUI.text = string.Format("{0:00} : {1:00}", minutes, seconds);
         playeroneScript.enabled = false;
         botScript.enabled = false;
         _scoreCounter = 0;
@@ -57,8 +43,6 @@ public class GameManager : MonoBehaviour
         botScript.gameObject.SetActive(true);
         golparticles[0].Stop();
         golparticles[1].Stop();
-        golparticles[2].Stop();
-        golparticles[3].Stop();
         StartCoroutine(Begin());
       
     }
@@ -81,50 +65,6 @@ public class GameManager : MonoBehaviour
             }
             Ball.goal = false;
         }
-        if (!gameover && countDownReady)
-        {
-            gameTimer -= Time.deltaTime;
-            if (gameTimer <= 0)
-            {
-                if (_scoreCounter > 0 || _scoreCounter_two > 0)
-                {
-                    playeroneScript.enabled = false;
-                    playertwoScript.enabled = false;
-                    botScript.enabled = false;
-                    gamePause = true;
-                    if (_scoreCounter == _scoreCounter_two)
-                    {
-                        FinalUI[0].SetActive(true);
-                        FinalUI[7].SetActive(true);
-                        draw.SetActive(true);
-                       // Resultado.PortaFinal = 2;
-                    }
-                    else
-                    {
-                        StartCoroutine(EndGame());
-                    }
-                }
-                else
-                {
-                    gamePause = true;
-                    playeroneScript.enabled = false;
-                    playertwoScript.enabled = false;
-                    botScript.enabled = false;
-                    FinalUI[0].SetActive(true);
-                    FinalUI[7].SetActive(true);
-                    defeatMid.SetActive(true);
-                    //Resultado.PortaFinal = 1;
-                }
-                countDownReady = false;
-                gameover = true;
-                gameTimer = 0;
-                timerUI.text = "00:00";
-            }
-            float minutes = Mathf.FloorToInt(gameTimer / 60);
-            float seconds = Mathf.FloorToInt(gameTimer % 60);
-
-            timerUI.text = string.Format("{0:00} : {1:00}", minutes, seconds);
-        }
     }
 
     void ScoreToPlayer(GameObject _goalSide)
@@ -138,8 +78,7 @@ public class GameManager : MonoBehaviour
             case "GoalUp":
                    Instantiate(_ballPrefab, new Vector2(-2f, 0.3119f), Quaternion.identity);
                 goaldown.SetActive(true);
-                golparticles[2].Play();
-                golparticles[3].Play();
+                golparticles[1].Play();
                 _scoreCounter = _one++;
                 if (_scoreCounter > 3)
                 {
@@ -154,7 +93,6 @@ public class GameManager : MonoBehaviour
                     Instantiate(_ballPrefab, new Vector2(2f, 0.3119f), Quaternion.identity);
                 goalup.SetActive(true);
                 golparticles[0].Play();
-                golparticles[1].Play();
                 _scoreCounter_two = _one_two++;
                 if(_scoreCounter_two > 3)
                 {
@@ -181,7 +119,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(5.2f);
         countAnimator.SetActive(true);
         yield return new WaitForSeconds(3.05f);
-        countDownReady = true;
         Instantiate(_ballPrefab, new Vector2(-0.1599f, 0.3119f), Quaternion.identity);
         playeroneScript.enabled = true;
         botScript.enabled = true;
@@ -202,22 +139,6 @@ public class GameManager : MonoBehaviour
                 continue;
             }
             FinalUI[i].SetActive(true);
-            switch (_scoreCounter)
-            {
-                case 0:
-                 //   Resultado.PortaFinal = 1;
-                    break;
-                case 1:
-                  //  Resultado.PortaFinal = 2;
-                    break;
-                case 2:
-                 //   Resultado.PortaFinal = 2;
-                    break;
-                case 3:
-                 //   Resultado.PortaFinal = 3;
-                    break;
-
-            }
         }
         yield return new WaitForSeconds(5.5f);
         PlayAgain();
@@ -249,12 +170,12 @@ public class GameManager : MonoBehaviour
     public void CloseGame()
     {
         gamePause = false;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadSceneAsync(0);
     }
     public void PlayAgain()
     {
         gamePause = false;
         gameover = false;
-        SceneManager.LoadScene("CenaFinal");
+        SceneManager.LoadSceneAsync(0);
     }
 }
