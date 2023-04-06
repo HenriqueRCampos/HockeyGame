@@ -14,7 +14,7 @@ no gerenciamento da plataforma Unity3D.
   > Isso torna o jogo mais dinâmico, podendo surpreender o jogador e evitar que o bot tenha um padrão.
 - O jogador e o bot tem um limite na área de movimento, impedindo que invadam o campo do adversário. Caso o player tente invadir, o seu disco fica travado na linha central do campo.
 
-O placar maximo é até 3 gols e não contem tempo limite na partida.
+- O placar maximo é até 3 gols e não contem tempo limite na partida.
 
 <div align="center" style="color: red ;">
     <img src= https://user-images.githubusercontent.com/107483658/230393265-acea757e-6113-4763-873e-19282107cc41.gif width=500px />
@@ -24,7 +24,7 @@ O placar maximo é até 3 gols e não contem tempo limite na partida.
 O campo foi feito com cantos curvos para evitar com que a bola ficasse presa, fazendo com que ela deslize ou rebata em alguma direção.
 Atrás do gol possui uma caixa de colisão, que detecta a colisão com a bola ocasionando no:
   - Acionamento da particula dentro do gol;
-  - UI "GOOOLLLL";
+  - UI "GOOOOLLLL";
   - Acrecentando ponto no placar;
   - Destruindo a bola;
   - Instanciando uma nova bola;
