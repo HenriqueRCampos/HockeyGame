@@ -17,7 +17,7 @@ no gerenciamento da plataforma Unity3D.
 - O placar maximo é até 3 gols e não contem tempo limite na partida.
 
 <div align="center" style="color: red ;">
-    <img src= https://user-images.githubusercontent.com/107483658/230393265-acea757e-6113-4763-873e-19282107cc41.gif width=500px />
+    <img src= https://user-images.githubusercontent.com/107483658/230387565-e48128b2-4a34-4597-9b49-3d3a6f37e3c5.png width=500px />
 </div>
 
 ## Design
@@ -31,5 +31,6 @@ Atrás do gol possui uma caixa de colisão, que detecta a colisão com a bola oc
 
 <div align="center">
     <img src= https://user-images.githubusercontent.com/107483658/230357698-9063c1bf-65cd-469f-8f39-b2e5fb2897fb.png width=457px />
-    <img src= https://user-images.githubusercontent.com/107483658/230387565-e48128b2-4a34-4597-9b49-3d3a6f37e3c5.png width=500px />
+    <img src= https://user-images.githubusercontent.com/107483658/230393265-acea757e-6113-4763-873e-19282107cc41.gif width=500px />
+    
 </div>
