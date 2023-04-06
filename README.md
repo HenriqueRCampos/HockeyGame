@@ -7,16 +7,16 @@ no gerenciamento da plataforma Unity3D.
 
 ## Sobre
 - Com uma build para Android. O jogo tem como base jogar em uma tela touchscreen.
-- Você joga contra um bot.
-  - O bot persegue a bola quando ela passa para o lado do campo dele. Em quanto a bola esta do lado do jogador, o bot recua um pouco para trás e espera até encontra-la 
-  novamente. Ele sempre vai em direção a parte de trás da bola, para assim conseguir chutar na direção do jogador. O bot por si, não possui dificuldade, mas
+- Você joga contra um [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs).
+  - Ele persegue a bola quando ela passa para o lado do campo dele. Em quanto a bola esta do lado do jogador, o [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs) recua um pouco para trás e espera até encontra-la 
+  novamente. Ele sempre vai em direção a parte de trás da bola, para assim conseguir chutar na direção do jogador, não possui dificuldade, mas
   ele altera a sua força de chute e a sua velocidade, a cada vez que chuta a bola.
-  > Isso torna o jogo mais dinâmico, podendo surpreender o jogador e evitar que o bot tenha um padrão.
-- O jogador e o bot tem um limite na área de movimento, impedindo que invadam o campo do adversário. Caso o player tente invadir, o seu disco fica travado na linha central do campo.
+  > Isso torna o jogo mais dinâmico, podendo surpreender o jogador e evitar que o [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs) tenha um padrão.
+- O jogador e o [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs) tem um limite na área de movimento, impedindo que invadam o campo do adversário. Caso o player tente invadir, o seu disco fica travado na linha central do campo.
 
 - O placar maximo é até 3 gols e não contem tempo limite na partida.
 
-<div align="center" style="color: red ;">
+<div align="center">
     <img src= https://user-images.githubusercontent.com/107483658/230387565-e48128b2-4a34-4597-9b49-3d3a6f37e3c5.png width=500px />
 </div>
 
