@@ -30,7 +30,7 @@ Atrás do gol possui uma caixa de colisão, que detecta a colisão com a bola oc
   - Instanciando uma nova bola;
 
 <div align="center">
-    <img src= https://user-images.githubusercontent.com/107483658/230357698-9063c1bf-65cd-469f-8f39-b2e5fb2897fb.png width=357px />
-    <img src= https://user-images.githubusercontent.com/107483658/230393265-acea757e-6113-4763-873e-19282107cc41.gif width=400px />
+    <img src= https://user-images.githubusercontent.com/107483658/230357698-9063c1bf-65cd-469f-8f39-b2e5fb2897fb.png width=407px />
+    <img src= https://user-images.githubusercontent.com/107483658/230393265-acea757e-6113-4763-873e-19282107cc41.gif width=450px />
     
 </div>
