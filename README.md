@@ -8,7 +8,7 @@ no gerenciamento da plataforma Unity3D.
 ## Sobre
 - Com uma build para Android. O jogo tem como base jogar em uma tela touchscreen.
 - Você joga contra um [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs).
-  - Ele persegue a bola quando ela passa para o lado do campo dele. Em quanto a bola esta do lado do jogador, o [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs) recua um pouco para trás e espera até encontra-la 
+  - Ele persegue a bola quando ela passa para o lado do campo dele. Enquanto a bola esta do lado do jogador, o [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs) recua um pouco para trás e espera até encontra-la 
   novamente. Ele sempre vai em direção a parte de trás da bola, para assim conseguir chutar na direção do jogador, não possui dificuldade, mas
   ele altera a sua força de chute e a sua velocidade, a cada vez que chuta a bola.
   > Isso torna o jogo mais dinâmico, podendo surpreender o jogador e evitar que o [bot](HockeyGame/Assets/scripts/GameScripts/Bot.cs) tenha um padrão.
