@@ -1,6 +1,6 @@
 # HockeyGame
 Este jogo é inspirado no jogo de mesa Air Hockey.
-É um jogo 2D de estudo, que fiz para ganhar mais conhecimento e pratica, com o objetivo de melhorar o meu Desenvolvimento de jogos, tanto em programação como
+É um jogo 2D de estudo, que fiz para ganhar mais conhecimento e prática, com o objetivo de melhorar o meu Desenvolvimento de jogos, tanto em programação como
 no gerenciamento da plataforma Unity3D.
 
 ![HockeyGame - Game - Windows, Mac, Linux - Unity 2021 3 16f1 Personal_ _DX11_ 05_04_2023 16_56_47](https://user-images.githubusercontent.com/107483658/230206480-e4411338-8088-4f51-9441-ceaa4c04131a.png)
