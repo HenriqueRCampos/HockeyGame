@@ -1,6 +1,6 @@
 # HockeyGame
 This game is inspired at Air Hockey table game.
-It's a 2D game, that a made to pratice and improve my knowledge in Game Development.
+It's a 2D game, that I made to pratice and improve my knowledge in Game Development.
 
 ![HockeyGame](https://user-images.githubusercontent.com/107483658/230206480-e4411338-8088-4f51-9441-ceaa4c04131a.png)
 
